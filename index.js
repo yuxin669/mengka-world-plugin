@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-const files = fs.readdirSync('./plugins/mengka-world/apps').filter(file => file.endsWith('.js'))
+const files = fs.readdirSync('./plugins/mengka-world-plugin/apps').filter(file => file.endsWith('.js'))
 
 let ret = []
 
