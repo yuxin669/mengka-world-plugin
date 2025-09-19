@@ -1,0 +1,49 @@
+# 萌卡世界插件配置文件
+
+# 数据库配置
+database:
+  host: "localhost"
+  user: "root"
+  password: "your_password"  # 请修改为你的数据库密码
+  port: 3306
+  database: "mengka_world"   # 请修改为你的数据库名
+  multipleStatements: true
+
+# 游戏配置
+game:
+  # 游戏版本
+  version: "1.0.0"
+  
+  # 图片缓存配置
+  imageCache:
+    maxCount: 300           # 最大图片缓存数量
+    cleanInterval: 120000   # 清理间隔(毫秒)
+  
+  # 数据备份配置
+  backup:
+    interval: 120000        # 备份间隔(毫秒)
+  
+  # 抽卡配置
+  gacha:
+    singleCost: 100         # 单抽费用
+    tenCost: 1000          # 十连费用
+  
+  # 工作配置
+  work:
+    hourlyPay: 4           # 小时工每小时收入
+    minutePay: 1           # 分钟工每分钟收入
+    secondPay: 1           # 十秒工每十秒收入
+    maxEarnings: 100       # 普通打工最大收入
+
+# 频道配置(如果使用QQ频道)
+guild:
+  guildId: ""              # 频道ID
+  allowedChannels: []      # 允许的子频道ID列表
+
+# 功能开关
+features:
+  enableGacha: true        # 是否启用抽卡功能
+  enableBattle: true       # 是否启用战斗功能
+  enableWork: true         # 是否启用打工功能
+  enableShop: true         # 是否启用商店功能
+  enableAdventure: true    # 是否启用冒险功能
